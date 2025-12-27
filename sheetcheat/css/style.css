@@ -1,0 +1,198 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    /* faz com que o padding e a borda não aumentem o tamanho do elemento. É como um reinício das configurações 
+} */
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetiva, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    /* same as above */
+    font: normal 16px Arial, sans-serif;
+
+    line-height: 1.6em; /* aumenta o espaçamento entre as linhas */
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: rgb(0, 119, 255);
+}
+
+a:active{
+    color: green;
+}
+
+/* a:visited{
+    color: rgb(0, 0, 0);
+} */
+
+.clr{
+    clear: both; /* limpa o float */
+}
+
+.container{
+    width: 80%; /* 960px é uma largura comum para sites, mas evita responsividade */
+    margin: auto; /* centraliza o container fornecendo a mesma margem de todos os lados*/
+}
+
+.button {
+    padding: 8px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgb(0, 119, 255);
+}
+
+.box1{
+    background-color: #333;
+    color: white;
+
+    border-right: 5px rgb(36, 100, 227) solid;
+    border-left: 5px rgb(36, 100, 227) solid;
+    border-bottom: 5px rgb(36, 100, 227) solid;
+    border-top: 5px rgb(36, 100, 227) solid;
+    
+    /* same as above */
+    border: 5px solid rgb(36, 100, 227);
+
+    border-width: 5px 10px; /* 5px para cima e para baixo, 10px para a direita e para a esquerda */
+    border-top-style: dotted; /* estilo da borda */
+
+    padding: 20px; /* espaço interno */
+
+    margin: 20px 0;
+}
+
+.box1 h1{ /* seleciona o h1 dentro da box1 */
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+}
+
+.box2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding:20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{ /* seleciona o label dentro da classe my-form, trocamos o display default inline pelo block (pula linha naturalmente) */
+    display: block;
+}
+
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea{ /* seleciona o input do tipo text dentro da classe my-form */
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* faz com que a borda não aumente o tamanho do elemento (como se fosse parte do elemento) */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding:15px;
+    box-sizing: border-box;
+
+}
+
+.p-box{
+    width:800px;
+    height: 500px;
+    border:1px solid #ccc;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bgd-image.avif');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p-box h1{
+    position: absolute;
+    top:100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{ /* fixa o elemento na tela (útil para elementos de contato ou para manter a navbar por todo o site */
+    position:fixed;
+    top:400px;
+}
+
+.my-list li:first-child{
+    background-color: red;
+}
+
+.my-list li:last-child{
+    background-color: blue;
+}
+
+.my-list li:nth-child(5){
+    background: green;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}

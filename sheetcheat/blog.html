@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Awesome blog!">
+    <meta name="keywords" content="blog, awesome">
+    <title>Blog</title>
+    <style> 
+        #main-header {
+            text-align: center;
+            background-color: #02bb8a;
+            color: white;
+            padding:10px;
+        }
+
+        #main-footer {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>My Website</h1>
+    </header>
+
+    <div class="container">
+    <a href="index.html">Go to index</a>
+    <section> 
+        <article class="post"> <!-- Main content of the page -->
+            <h3> Blog post 1</h3>
+            <small> Posted by Ninn on January 25 </small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat veritatis tenetur sit, consequuntur enim sed provident fuga ab minus? Ducimus odit error ipsam neque, eaque totam incidunt sint maiores.</p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post"> 
+            <h3> Blog post 2</h3>
+            <small> Posted by Ninn on January 25 </small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat veritatis tenetur sit, consequuntur enim sed provident fuga ab minus? Ducimus odit error ipsam neque, eaque totam incidunt sint maiores.</p>
+            <!-- Como <p> é uma estrutura block, a próxima necessariamente irá pular a linha -->
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post"> 
+            <h3> Blog post 3</h3>
+            <small> Posted by Ninn on January 25 </small>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellat veritatis tenetur sit, consequuntur enim sed provident fuga ab minus? Ducimus odit error ipsam neque, eaque totam incidunt sint maiores.</p>
+            <a href="post.html">Read More</a>
+        </article>
+    </section>
+
+    <aside>
+        <div class="categories">
+        <h3>Categories</h3>
+        <ul>
+            <li> <a href="#">Category 1</a></li>
+            <li> <a href="#">Category 2</a></li>
+            <li> <a href="#">Category 3</a></li>
+        </ul>
+        </div>
+    </aside>
+    <form class="my-form" action="form-group">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit" name="">
+    </form>
+
+    <div class="block">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.</p>
+
+    </div>
+    <div class="block">
+        <h3>Contact Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.</p>
+
+    </div>
+    <div class="block">
+        <h3>Follow Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.</p>
+
+    </div>
+
+    <div id="main-block">
+        <h3>My Website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.</p>
+
+    </div>
+    <div id="sidebar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus sed unde reprehenderit facere consectetur, neque cum, aspernatur, id dolorum expedita nisi fuga. Sunt dolorum soluta, labore aspernatur molestias sed.</p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="p-box">
+        <h1>Hello</h1>
+        <h2>Goodbye</h2>
+
+    </div>
+
+    <ul class="my-list">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+</div> <!-- End of container -->
+    
+<a class="fix-me button" href="">Hello</a>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2025 My Website.</p>
+    </footer>
+</body>
+</html>
